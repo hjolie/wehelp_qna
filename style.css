@@ -2,17 +2,23 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif, Arial;
+  font-family: sans-serif, Arial;
 }
 
 body {
   background-color: #424038;
   color: #ccc8bc;
-  font-size: 18px;
+  font-size: 20px;
+}
+
+h2 {
+  margin-top: 50px;
+  text-align: center;
+  color: #e8cfa9;
 }
 
 .accordion {
-  margin: 60px auto;
+  margin: 50px auto;
   width: 800px;
 }
 
@@ -30,9 +36,8 @@ body {
 .accordion li label {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   padding: 10px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
   cursor: pointer;
 }
@@ -57,8 +62,12 @@ input[type="radio"] {
   transition: max-height 0.5s, padding 0.5s;
 }
 
+.accordion a {
+  color: blanchedalmond;
+}
+
 .accordion input[type="radio"]:checked + label + .content {
-  max-height: 400px;
+  max-height: 800px;
   padding: 10px 10px 20px;
 }
 
